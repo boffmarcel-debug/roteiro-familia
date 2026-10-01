@@ -2048,6 +2048,142 @@ Object.assign(PLACES, {
   'f-cvs-57': { n: 'CVS 241 W 57th St (24 horas)', s: 'CVS W 57th St', c: 'farmacia', a: [], ll: [40.76679, -73.98233], ad: '241 W 57th St (na 8th Ave)', tip: 'Loja e farmácia 24 horas, perto do Columbus Circle.', q: 'CVS Pharmacy, 241 West 57th St, New York', h24: true, conf: true, tags: ['ess', 'saude'] },
   'f-walgreens-34': { n: 'Walgreens 155 E 34th St (farmácia 24 horas)', s: 'Walgreens E 34th St', c: 'farmacia', a: [], ll: [40.74603, -73.97871], ad: '155 E 34th St (na 3rd Ave)', tip: 'Loja e farmácia 24 horas (Walgreens/Duane Reade).', q: 'Walgreens, 155 E 34th St, New York', h24: true, tags: ['ess', 'saude'] }
 });
+
+/* NYC 2026 · roteiro v3: ajustes finais da família (30/09/2026) */
+Object.assign(PLACES, {
+  'urban-hawker': { n: 'Urban Hawker', c: 'fastfood', a: ['Midtown'], ll: [40.76035, -73.98144], ad: '135 W 50th St, entre a 6th e a 7th Ave', tip: 'Praça de alimentação no estilo de Singapura, com uns 15 balcões. O frango hainanês é o prato mais elogiado. Nos horários de pico é difícil achar mesa.', q: 'Urban Hawker, 135 W 50th St, New York', food: { k: 'hall', p: '$' } },
+  'the-hugh': { n: 'The Hugh', c: 'fastfood', a: ['Midtown'], ll: [40.7581, -73.97005], ad: '601 Lexington Ave (com a E 53rd St)', tip: 'Praça de alimentação com uns 15 restaurantes em volta de um salão cheio de árvores, no térreo do Citigroup Center. Tem kimbap coreano no Ö Bar.', q: 'The Hugh, 601 Lexington Ave, New York', food: { k: 'hall', p: '$' } },
+  'timeout-market': { n: 'Time Out Market New York', s: 'Time Out Market', c: 'fastfood', a: ['Brooklyn'], ll: [40.70365, -73.99075], ad: '55 Water St (Empire Stores), DUMBO', tip: 'Praça de alimentação em frente ao Jane’s Carousel. Suba ao terraço do 5º andar para ver as pontes do Brooklyn e de Manhattan. Abre todos os dias às 8h.', q: 'Time Out Market New York, 55 Water St, Brooklyn', food: { k: 'hall', p: '$$' }, land: 'bk' },
+  century21: { n: 'Century 21', c: 'compras', a: ['Downtown'], ll: [40.71033, -74.01047], ad: '22 Cortlandt St, entre a Church St e a Broadway', tip: 'Loja de departamentos com grifes com desconto em quatro andares, inclusive roupa infantil e sapatos. Seg a sáb, 9h às 21h; dom, 11h às 20h.', q: 'Century 21, 22 Cortlandt St, New York' },
+  seaglass: { n: 'SeaGlass Carousel', s: 'SeaGlass', c: 'marco', a: ['Downtown'], ll: [40.70225, -74.01535], ad: 'The Battery, em frente ao 17 State St', tip: 'Carrossel de 30 peixes luminosos dentro de uma concha de vidro. Ingresso de US$ 5 por volta, vendido na hora. Confira o horário no dia.', q: 'SeaGlass Carousel, Battery Park, New York', conf: true },
+  'trinity-church': { n: 'Trinity Church', c: 'marco', a: ['Downtown'], ll: [40.70812, -74.01205], ad: '89 Broadway (com a Wall St)', tip: 'Igreja histórica no começo da Wall Street. No cemitério ao lado está o túmulo de Alexander Hamilton.', q: 'Trinity Church, 89 Broadway, New York' },
+  ghostbusters: { n: 'Quartel dos Caça-Fantasmas (Hook & Ladder 8)', s: 'Caça-Fantasmas', c: 'marco', a: ['Downtown'], ll: [40.71969, -74.00658], ad: '14 N Moore St (com a Varick St), Tribeca', tip: 'O quartel de bombeiros dos filmes Caça-Fantasmas, entre as ruas de paralelepípedo de Tribeca. É um quartel em funcionamento: fotos só por fora.', q: 'Hook and Ladder 8, 14 N Moore St, New York' },
+  'strawberry-fields': { n: 'Strawberry Fields', c: 'parque', a: ['Central Park'], ll: [40.77575, -73.97512], ad: 'Central Park, entrada pela Central Park West com a W 72nd St', tip: 'Memorial a John Lennon, com o mosaico “Imagine”, em frente ao edifício Dakota, onde ele morava.', q: 'Strawberry Fields, Central Park, New York' },
+
+  saks: { n: 'Saks Fifth Avenue', s: 'Saks', c: 'compras', a: ['Midtown'], ll: [40.7579, -73.9765], ad: '611 5th Ave (entre a 49th e a 50th St)', tip: 'A loja de departamentos de luxo mais famosa da avenida, com nove andares num quarteirão inteiro.', q: 'Saks Fifth Avenue, 611 5th Ave, New York' },
+  'nike-fifth': { n: 'Nike NYC, House of Innovation 000', s: 'Nike House of Innovation', c: 'compras', a: ['Midtown'], ll: [40.75966, -73.97612], ad: '650 5th Ave (com a 52nd St)', tip: 'Loja-conceito da Nike com seis andares.', q: 'Nike NYC House of Innovation 000, 650 5th Ave, New York' },
+  'uniqlo-fifth': { n: 'Uniqlo Fifth Avenue', s: 'Uniqlo', c: 'compras', a: ['Midtown'], ll: [40.76005, -73.97585], ad: '660 5th Ave (com a 53rd St)', tip: 'Loja-conceito da Uniqlo, com roupas básicas a bons preços.', q: 'Uniqlo Fifth Avenue, New York' },
+  tiffany: { n: 'Tiffany & Co. The Landmark', s: 'Tiffany & Co.', c: 'compras', a: ['Midtown'], ll: [40.76265, -73.9738], ad: '727 5th Ave (com a 57th St)', tip: 'A joalheria de Bonequinha de Luxo, reformada e reaberta como The Landmark. Vale entrar só para ver.', q: 'Tiffany & Co. The Landmark, 727 5th Ave, New York' },
+  bergdorf: { n: 'Bergdorf Goodman', c: 'compras', a: ['Midtown'], ll: [40.7633, -73.97375], ad: '754 5th Ave (entre a 57th e a 58th St)', tip: 'Loja de departamentos clássica de luxo, famosa pelas vitrines.', q: 'Bergdorf Goodman, 754 5th Ave, New York' },
+  'apple-fifth': { n: 'Apple Fifth Avenue', s: 'Apple (cubo de vidro)', c: 'compras', a: ['Midtown'], ll: [40.7637, -73.9727], ad: '767 5th Ave (em frente ao Plaza Hotel)', tip: 'A loja da Apple com o cubo de vidro na praça, em frente ao Plaza Hotel e à entrada do Central Park.', q: 'Apple Fifth Avenue, 767 5th Ave, New York' },
+
+  'tjmaxx-wall': { n: 'T.J. Maxx (Wall Street)', s: 'T.J. Maxx', c: 'compras', a: ['Downtown'], ll: [40.70725, -74.0105], ad: '14 Wall St (entrada pela Nassau St)', tip: 'Roupas, sapatos e acessórios de marca com desconto, ao lado da Bolsa.', q: 'T.J. Maxx, 14 Wall St, New York' },
+
+  'target-times-sq': { n: 'Target Times Square', c: 'compras', a: ['Midtown'], ll: [40.75655, -73.988], ad: '237 W 42nd St, entre a 7th e a 8th Ave', tip: 'A Target mais perto do hotel: roupas, farmácia, lanches e itens de viagem.', q: 'Target, 237 W 42nd St, New York', tags: ['ess'] },
+  'target-herald-sq': { n: 'Target Herald Square', c: 'compras', a: ['Midtown'], ll: [40.74995, -73.9887], ad: '112 W 34th St, perto da Macy’s', tip: 'Loja grande, com itens pensados também para turistas. Abre todos os dias, das 8h às 23h.', q: 'Target, 112 W 34th St, New York', tags: ['ess'] },
+  'target-soho': { n: 'Target SoHo', c: 'compras', a: ['Village / SoHo'], ll: [40.7248, -73.9972], ad: '600 Broadway (com a Houston St)', tip: 'Na Broadway, a poucas quadras das lojas do SoHo.', q: 'Target, 600 Broadway, New York', tags: ['ess'] },
+  'target-union-sq': { n: 'Target Union Square', c: 'compras', a: ['Union Square'], ll: [40.735, -73.98955], ad: '10 Union Square East', tip: 'Na própria Union Square, do lado leste da praça.', q: 'Target, 10 Union Square East, New York', tags: ['ess'] },
+  'target-tribeca': { n: 'Target Tribeca', c: 'compras', a: ['Downtown'], ll: [40.7146, -74.0106], ad: '255 Greenwich St (na Murray St)', tip: 'Entre o World Trade Center e Tribeca, no caminho da Century 21 para o quartel dos Caça-Fantasmas.', q: 'Target, 255 Greenwich St, New York', tags: ['ess'] },
+  'target-uws': { n: 'Target Upper West Side (61st St)', s: 'Target 61st St', c: 'compras', a: ['Central Park'], ll: [40.7695, -73.98255], ad: '1863 Broadway (com a 61st St)', tip: 'A 2 quadras do Columbus Circle, onde vocês trocam de metrô na volta do museu.', q: 'Target, 1863 Broadway, New York', tags: ['ess'] }
+});
+PLACES['wall-street'].tip = 'A Fearless Girl fica em frente à Bolsa, na Broad St. Do outro lado da rua, no Federal Hall, está a estátua de George Washington.';
+PLACES['fifth-ave'].tip = 'Vitrines e lojas-conceito entre a 49th e a 59th St, a 5 min a pé do hotel. As lojas mais famosas estão em Onde comprar, no Dia 4.';
+PLACES['line-friends'].sug = 'Dia 1';
+PLACES.koreatown.sug = 'Dia 3';
+PLACES.hmart.sug = 'Dia 3, em Koreatown';
+const SHOPS = ['target-times-sq', 'target-herald-sq', 'target-soho', 'target-union-sq', 'target-tribeca', 'target-uws'];
+
+DAYS.splice(0, 6,
+  { date: '2026-10-10', title: 'Times Square, Line Friends e a feira', walk: 'leve', arrival: true,
+    intro: 'Chegada pelo JFK, check-in e uma tarde a pé por Midtown: Times Square, a Line Friends, o Bryant Park, a feira de rua ao lado do hotel e um jantar cedo no Urban Hawker.',
+    stops: [['times-square', '14:00'], ['line-friends', '14:20'], ['bryant-park', '15:15', true], ['autumnfest', '15:45'], ['urban-hawker', '17:15']],
+    legs: [W(8, 'Pela 45th St até a Broadway.'), W(2, 'A loja fica na própria Times Square, na 1515 Broadway, com a 45th St.'), W(7, 'Desça a Broadway até a 42nd St e siga por ela até a 6th Ave.'), W(2, 'A feira começa ao lado do parque, na 6th Ave com a 42nd St: suba pela avenida.'), W(5, 'Suba pela feira até a 50th St e vire à esquerda: o Urban Hawker fica a meia quadra da 6th Ave.'), W(9, 'Desça a 6th Ave até a 45th St e vire à esquerda.')],
+    alerts: [{ k: 'tip', t: 'Hoje tem a Avenue of the Americas Autumnfest, feira de rua na 6th Ave, da 42nd à 56th St, em geral das 11h às 18h.' }, { k: 'info', t: 'Fim de semana: obras programadas no metrô são mais comuns. Hoje o roteiro é todo a pé.' }] },
+  { date: '2026-10-11', title: 'Central Park e museu', walk: 'média',
+    intro: 'Manhã no Central Park e Museu de História Natural até o meio da tarde. Na volta, o Strawberry Fields e chegada ao hotel por volta das 16h, com o resto do dia livre.',
+    stops: [['cp-entrada', '09:30'], ['the-pond', '09:45'], ['the-mall', '10:10'], ['bethesda-terrace', '10:30'], ['bethesda-fountain', '10:40'], ['bow-bridge', '10:55'], ['amnh', '11:30'], ['strawberry-fields', '15:15', true]],
+    legs: [
+      W(15, 'Suba a 5th Ave: você passa pela St. Patrick’s, pelas lojas e pelo Plaza Hotel.', { alt: T([walk(4, 'D15'), train(['F'], 'Uptown & Queens', ['D15', 'B10']), walk(4)], { rule: 'weekend' }) }),
+      W(3), W(7), W(5), W(1), W(4),
+      W(15, 'Contorne o lago pelo lado oeste e saia do parque na W 77th St; a entrada principal fica na Central Park West com a 79th St.'),
+      W(10, 'Desça a Central Park West até a W 72nd St e entre no parque, em frente ao edifício Dakota.'),
+      T([walk(3, 'A22'), train(['C'], 'Downtown & Brooklyn', ['A22', 'A24']), train(['D'], 'Downtown & Brooklyn', ['A24', 'D14', 'D15']), walk(4)], { note: 'Domingo não tem linha B: pegue a C e, no 59 St–Columbus Circle, troque para a D na mesma plataforma. Se pularem o Strawberry Fields, embarquem na 81 St, em frente ao museu.' })
+    ],
+    alerts: [{ k: 'tip', t: 'Museu de História Natural: abre todos os dias das 10h às 17h30. Com o mesmo ingresso dá para sair e voltar no mesmo dia.' }, { k: 'info', t: 'Domingo: obras programadas no metrô são mais comuns, e a linha B não roda.' }] },
+  { date: '2026-10-12', title: 'Chinatown, SoHo e dia coreano', walk: 'média',
+    intro: 'Chinatown e Little Italy de manhã, compras no SoHo e a hello82. À tarde, Macy’s, as lojas de K-pop de Koreatown e jantar de churrasco coreano.',
+    kids: '12/10 também é Dia das Crianças no Brasil.',
+    stops: [['chinatown', '10:00'], ['little-italy', '11:15'], ['soho', '12:30'], ['hello82', '14:30'], ['macys', '15:30'], ['koreatown', '16:45'], ['kpop-nara', '17:00'], ['koryo', '17:45'], ['jongro', '18:30']],
+    legs: [
+      T([walk(5, 'D16'), train(['D'], 'Downtown & Brooklyn', ['D16', 'D17', 'A32', 'D21', 'D22']), walk(8)], { note: 'Em dia útil a B também serve, mas hoje é feriado: se a B não estiver rodando, use a D.' }),
+      W(5), W(8), W(6),
+      T([walk(4, 'Q01'), train(['N', 'Q'], 'Uptown & Queens', ['Q01', '635', 'D17']), walk(2, null, 'Saia pela Broadway: a Macy’s ocupa o quarteirão da 34th St.')]),
+      W(5, 'Desça a Broadway até a 32nd St: ali começa a Korea Way.'),
+      W(2, 'Na esquina da Broadway com a 32nd St.'), W(3), W(1),
+      W(15, 'Suba a 5th Ave até a 45th St.')
+    ],
+    alerts: [{ k: 'warn', t: 'Columbus Day: desfile na 5th Ave, mais ou menos da 44th à 72nd St, entre 11h30 e 15h. Saia do hotel antes das 10h; na volta, à noite, a avenida já estará liberada.' }, { k: 'tip', t: 'A hello82 abre às 12h de segunda a quinta.' }, { k: 'tip', t: 'À noite os churrascos coreanos costumam lotar: vale reservar o Jongro BBQ.' }] },
+  { date: '2026-10-13', title: 'Rockefeller, St. Patrick’s e 5th Avenue', walk: 'leve',
+    intro: 'Manhã nas lojas do Rockefeller Center e na St. Patrick’s, almoço no The Hugh e as lojas icônicas da 5th Avenue. Tarde de descanso e noite livre, com o Top of the Rock como opção.',
+    stops: [['rockefeller', '10:00'], ['nintendo', '10:15'], ['lego', '11:00'], ['st-patricks', '11:40'], ['fao', '12:05'], ['the-hugh', '13:00'], ['fifth-ave', '14:00'], ['hotel', '15:30', false, 'Descanso no hotel'], ['top-of-the-rock', '17:40', true]],
+    legs: [W(6), W(2), W(4), W(2, 'Atravesse a 5th Ave: a catedral fica em frente à LEGO.'), W(4, 'Volte pelos Channel Gardens até a Rockefeller Plaza.'), W(12, 'Suba a 5th Ave até a 53rd St e siga por ela, sentido leste, até a Lexington Ave.'), W(9, 'Volte pela 53rd St até a 5th Ave.'), W(8), W(6), W(6)],
+    alerts: [{ k: 'tip', t: 'Se chover, troque as compras pelo MoMA, na W 53rd St, a uns 7 min do hotel, com ingresso de horário marcado.' }, { k: 'tip', t: 'Noite livre. A sugestão é o Top of the Rock perto do pôr do sol, por volta das 18h20, com ingresso de horário marcado.' }] },
+  { date: '2026-10-14', title: 'Distrito Financeiro, Tribeca e MJ na Broadway', walk: 'média',
+    intro: 'Manhã no Distrito Financeiro, do 9/11 Memorial ao Battery Park, almoço com vista para o rio no Hudson Eats, compras na Century 21 e uma volta por Tribeca. Descanso no hotel e, à noite, MJ The Musical.',
+    stops: [['memorial-911', '10:00'], ['oculus', '10:40'], ['trinity-church', '11:00'], ['wall-street', '11:10'], ['charging-bull', '11:30'], ['battery-park', '11:45'], ['seaglass', '12:05'], ['hudson-eats', '12:45'], ['century21', '13:45'], ['ghostbusters', '15:00'], ['hotel', '16:00', false, 'Descanso antes do musical'], ['ellens', '17:30'], ['mj-musical', '18:40']],
+    legs: [
+      T([walk(9, '631'), train(['4', '5'], 'Downtown & Brooklyn', ['631', '635', '640', '418']), walk(6, null, 'Pela passagem subterrânea até o Oculus e, dali, até a praça do memorial.')]),
+      W(3),
+      W(6, 'Pela Church St e pela Trinity Place até a Broadway com a Wall St.'),
+      W(3, 'Desça a Wall St até a Broad St: a Fearless Girl fica em frente à Bolsa.'),
+      W(5, 'Pela Broad St e pela Beaver St até o Bowling Green.'),
+      W(4), W(3),
+      W(18, 'Pela orla do rio Hudson, na Battery Park City, até o Brookfield Place. A praça de alimentação fica no 2º andar.'),
+      W(8, 'Pela passagem do Oculus, por baixo da West St, até a Church St: a loja fica do outro lado da rua.'),
+      W(16, 'Pela Greenwich St, sentido norte, até a N Moore St. No caminho fica a Target Tribeca, na altura da Murray St.'),
+      T([walk(2, '136'), train(['1'], 'Uptown & The Bronx', ['136', '135', '134', '133', '132', '131', '130', '129', '128', '127']), walk(8)]),
+      W(13, 'Pela 6th Ave até a 51st St e, dali, até a Broadway.'),
+      W(3, 'Suba a Broadway até a 52nd St e vire à esquerda.'),
+      W(15, 'Desça a Broadway pela Times Square iluminada até a 45th St e siga até o hotel.')
+    ],
+    alerts: [{ k: 'info', t: 'Hoje à noite: MJ The Musical (ingresso comprado), no Neil Simon Theatre, 250 W 52nd St. Chegue uns 30 min antes.' }, { k: 'tip', t: 'O descanso antes do musical fica em pouco mais de 1 hora. Se precisarem de mais tempo, encurtem a volta por Tribeca.' }, { k: 'tip', t: 'O Ellen’s Stardust Diner não aceita reserva e costuma ter fila: chegue por volta das 17h30. Para jantar com reserva, o Gallaghers fica na mesma quadra do teatro.' }, { k: 'tip', t: 'Opcionais com ingresso: o museu do 11 de Setembro, com algumas salas pesadas para crianças, e o mirante do One World Observatory.' }] },
+  { date: '2026-10-15', title: 'Staten Island Ferry, DUMBO e Brooklyn Bridge', walk: 'alta',
+    intro: 'Ferry gratuito com vista da Estátua da Liberdade, outlet em Staten Island, almoço no Time Out Market, em DUMBO, e a travessia da Brooklyn Bridge no fim do dia.',
+    stops: [['whitehall', '09:45'], ['empire-outlets', '10:30'], ['washington-st', '13:00'], ['timeout-market', '13:15'], ['janes-carousel', '14:30'], ['bb-park', '15:00'], ['brooklyn-bridge', '16:45'], ['city-hall-park', '17:30']],
+    legs: [
+      T([walk(9, '631'), train(['4', '5'], 'Downtown & Brooklyn', ['631', '635', '640', '418', '419', '420']), walk(5)]),
+      T([ferry(25, 'whitehall', 'st-george'), walk(3)]),
+      T([walk(3, 'st-george'), ferry(25, 'st-george', 'whitehall'), walk(4, 'R27'), train(['R'], 'Brooklyn (Bay Ridge)', ['R27', 'R28', 'R29']), walk(12)]),
+      W(3, 'Pela Water St, sentido Brooklyn Bridge, até o Empire Stores.'),
+      W(2, 'Atravesse a rua até o parque, na beira do rio.'),
+      W(8),
+      W(12, 'Até a escadaria da Washington St.'),
+      W(35, 'Travessia a pé, sentido Manhattan, com o skyline à frente.', { label: 'Travessia' }),
+      T([walk(2, '640'), train(['4', '5'], 'Uptown & The Bronx', ['640', '635', '631']), walk(9)])
+    ],
+    alerts: [{ k: 'tip', t: 'O Staten Island Ferry é gratuito e passa perto da Estátua da Liberdade: na ida, fique do lado direito do barco.' }, { k: 'warn', t: 'O Empire Outlets teve várias lojas fechadas nos últimos anos. Dê uma olhada rápida e siga o roteiro.' }] }
+);
+const RAIN3 = [
+  { t: ['A feira e o Bryant Park são ao ar livre, e a feira pode ter menos barracas com chuva. A Line Friends e o Urban Hawker são cobertos.', 'Outras opções cobertas perto do hotel: Nintendo NY, LEGO Store e FAO Schwarz, no Rockefeller Center, e o MoMA, na W 53rd St.'], ids: ['line-friends', 'urban-hawker', 'moma', 'nintendo'] },
+  { t: ['Inverta a ordem: comece no museu às 10h, quando abre, e fique mais tempo lá dentro.', 'O Central Park e o Strawberry Fields ficam para uma volta curta se a chuva der trégua. Dá para almoçar no próprio museu ou no Whole Foods do Columbus Circle, que é coberto.'], ids: ['amnh', 'wf-columbus', 'shake-shack-uws'] },
+  { t: ['Chinatown e Little Italy são mais de rua: encurte essa parte. No SoHo dá para ir de loja em loja, e a hello82 é coberta.', 'A segunda metade do dia já é coberta: Macy’s, as lojas de K-pop e o jantar em Koreatown.'], ids: ['hello82', 'macys', 'ice-cream', 'food-gallery-32'] },
+  { t: ['Se chover, troque as compras na 5th Avenue pelo MoMA, na W 53rd St, a uns 7 min do hotel, com ingresso de horário marcado. As lojas do Rockefeller Center e o almoço no The Hugh já são cobertos.', 'Com nuvens baixas, a vista do Top of the Rock some: se for o caso, deixe para outra noite.'], ids: ['moma', 'the-hugh', 'nintendo', 'fao'] },
+  { t: ['Com chuva, encurte o Battery Park e a volta por Tribeca. O Oculus, o Brookfield Place, o Hudson Eats e a Century 21 são cobertos.', 'O museu do 11 de Setembro também é coberto, com ingresso de horário marcado. O musical à noite não muda.'], ids: ['oculus', 'brookfield', 'century21', 'museu-911'] },
+  { t: ['O ferry funciona com chuva fraca, e o Empire Outlets e o Time Out Market são cobertos. DUMBO e a ponte são ao ar livre.', 'Com chuva forte, depois do ferry troque DUMBO e a ponte pelo Intrepid Museum, a oeste de Midtown.'], ids: ['timeout-market', 'empire-outlets', 'intrepid'] },
+  RAIN2[6],
+  RAIN2[7]
+];
+const FOOD3 = [
+  ['urban-hawker', 'wf-bryant-park', 'joes-broadway', 'los-tacos', 'carmines', 'juniors', 'keens'],
+  ['shake-shack-uws', 'levain', 'jacobs-pickles', 'wf-columbus', 'wf-bryant-park', 'halal-guys'],
+  ['nom-wah', 'ferrara', 'lombardis', 'balthazar', 'jongro', 'bcd-tofu', 'food-gallery-32'],
+  ['the-hugh', 'halal-guys', 'wf-bryant-park', 'urbanspace', 'keens'],
+  ['hudson-eats', 'eataly-downtown', 'wf-tribeca', 'delmonicos', 'ellens', 'gallaghers'],
+  ['timeout-market', 'juliana', 'grimaldi', 'river-cafe'],
+  FOOD2[6],
+  ['wf-bryant-park', 'urban-hawker', 'joes-broadway', 'halal-guys']
+];
+const SHOP3 = [
+  ['target-times-sq'],
+  ['target-uws'],
+  ['target-soho', 'target-herald-sq'],
+  ['saks', 'nike-fifth', 'uniqlo-fifth', 'tiffany', 'bergdorf', 'apple-fifth', 'target-times-sq'],
+  ['century21', 'tjmaxx-wall', 'target-tribeca'],
+  ['target-tribeca'],
+  ['target-union-sq'],
+  ['target-times-sq', 'target-herald-sq']
+];
+DAYS.forEach((D, i) => { D.rain = RAIN3[i]; D.food = FOOD3[i]; D.shop = SHOP3[i]; });
 </script>
 <script>/* NYC 2026 · app */
 (function () {
@@ -2119,7 +2255,11 @@ Object.assign(PLACES, {
     if (['mapa', 'roteiro', 'metro', 'lugares', 'info'].indexOf(base.tab) < 0) base.tab = 'roteiro';
     if (base.filter === 'metro') base.filter = 'dia';
     if (!base.tickets.mj) base.tickets.mj = { st: 'ok' };
-    if (base.ver !== 2) { base.done = {}; base.skip = {}; base.now = {}; base.times = {}; base.day = null; base.ver = 2; }
+    if (base.ver !== 3) {
+      base.done = {}; base.skip = {}; base.now = {}; base.times = {}; base.day = null; base.edits = {};
+      TICKETS.forEach((t) => { const v = base.tickets[t.id] || {}; if (v.dec === 'no' && v.st !== 'ok') DAYS.forEach((D, d) => { if (D.stops.some((s) => s[0] === t.place)) { const E = base.edits[d] = base.edits[d] || { rm: [], add: [] }; if (E.rm.indexOf(t.place) < 0) E.rm.push(t.place); } }); });
+      base.ver = 3;
+    }
     return base;
   }
   const S = load();
@@ -2306,7 +2446,7 @@ Object.assign(PLACES, {
       + '<div class="day-meta">' + meta.map((m) => '<span>' + m + '</span>').join('') + '</div>'
       + (D.kids ? '<p class="day-kids">🎈 ' + esc(D.kids) + '</p>' : '')
       + (D.alerts || []).map((a) => alertHTML(a.k, a.t)).join('')
-      + '<div class="day-links"><button class="btn ghost sm" data-act="day-map" data-d="' + d + '">' + IC.map + ' Ver no mapa</button><button class="btn ghost sm' + (editDay === d ? ' is-on' : '') + '" data-act="' + (editDay === d ? 'edit-done' : 'edit-day') + '" data-d="' + d + '">' + IC.edit + (editDay === d ? ' Concluir edição' : ' Editar') + '</button>' + ((D.food || []).length ? '<button class="btn ghost sm" data-act="scroll" data-to="comer-dia">' + IC.comida + ' Onde comer</button>' : '') + (D.rain ? '<button class="btn ghost sm" data-act="scroll" data-to="chuva-dia">' + IC.umbrella + ' Se chover</button>' : '') + (Object.keys(S.times).some((k) => k.split(':')[0] === String(d)) ? '<button class="btn ghost sm" data-act="reset-times" data-d="' + d + '">Restaurar horários</button>' : '') + '</div></section>';
+      + '<div class="day-links"><button class="btn ghost sm" data-act="day-map" data-d="' + d + '">' + IC.map + ' Ver no mapa</button><button class="btn ghost sm' + (editDay === d ? ' is-on' : '') + '" data-act="' + (editDay === d ? 'edit-done' : 'edit-day') + '" data-d="' + d + '">' + IC.edit + (editDay === d ? ' Concluir edição' : ' Editar') + '</button>' + ((D.food || []).length ? '<button class="btn ghost sm" data-act="scroll" data-to="comer-dia">' + IC.comida + ' Onde comer</button>' : '') + ((D.shop || []).length ? '<button class="btn ghost sm" data-act="scroll" data-to="comprar-dia">' + IC.compras + ' Onde comprar</button>' : '') + (D.rain ? '<button class="btn ghost sm" data-act="scroll" data-to="chuva-dia">' + IC.umbrella + ' Se chover</button>' : '') + (Object.keys(S.times).some((k) => k.split(':')[0] === String(d)) ? '<button class="btn ghost sm" data-act="reset-times" data-d="' + d + '">Restaurar horários</button>' : '') + '</div></section>';
   }
   function hotelRow(d, kind) {
     const D = DAYS[d];
@@ -2411,6 +2551,15 @@ Object.assign(PLACES, {
       return '<button class="row" data-act="place" data-id="' + esc(k) + '"><span class="row-i" aria-hidden="true">' + icon(k) + '</span><span class="row-main"><b>' + esc(p.n) + priceTag(p) + (p.conf ? '<span class="badge-conf">A confirmar</span>' : '') + '</b><span class="muted">' + esc((p.food ? FOOD_KIND[p.food.k] : (CATS[p.c] || {}).t) + (near ? ', ' + near : '')) + '</span></span></button>';
     }).join('') + '</div><button class="btn ghost sm" data-act="filter-go" data-f="comer">Ver todos no mapa</button></section>';
   }
+  function shopDayHTML(d) {
+    const ids = (DAYS[d].shop || []).filter((k) => P[k]);
+    if (!ids.length) return '';
+    return '<section class="card" id="comprar-dia"><h3 class="card-t">Onde comprar no Dia ' + (d + 1) + '</h3><div class="rows">' + ids.map((k) => {
+      const p = P[k], ns = nearestStopOf(d, k);
+      const near = ns ? (ns.id === k ? 'no roteiro de hoje' : (ns.id === 'hotel' ? 'perto do hotel' : 'perto de ' + nm(ns.id)) + ', ~' + walkMin(ns.m) + ' min a pé') : '';
+      return '<button class="row" data-act="place" data-id="' + esc(k) + '"><span class="row-i" aria-hidden="true">' + icon(k) + '</span><span class="row-main"><b>' + esc(p.n) + (p.conf ? '<span class="badge-conf">A confirmar</span>' : '') + '</b><span class="muted">' + esc(p.ad + (near ? ' · ' + near : '')) + '</span></span></button>';
+    }).join('') + '</div></section>';
+  }
   function rainHTML(d) {
     const r = DAYS[d].rain; if (!r) return '';
     const btns = (r.ids || []).filter((k) => P[k]).map((k) => '<button class="chip chip-go" data-act="place" data-id="' + esc(k) + '">' + icon(k) + ' ' + esc(P[k].s || P[k].n) + '</button>').join('');
@@ -2446,7 +2595,7 @@ Object.assign(PLACES, {
     const ph = phase(), d = selDay();
     $('#view-roteiro').innerHTML = dayChipsHTML(d, ph) + heroHTML() + dayCardHTML(d)
       + (editDay === d ? editBarHTML(d) : '<p class="tl-hint">Toque num lugar para ver detalhes e no trecho entre dois lugares para ver a rota.</p>')
-      + (rainLikely(d) ? rainHTML(d) + timelineHTML(d) + foodDayHTML(d) : timelineHTML(d) + foodDayHTML(d) + rainHTML(d))
+      + (rainLikely(d) ? rainHTML(d) + timelineHTML(d) + foodDayHTML(d) + shopDayHTML(d) : timelineHTML(d) + foodDayHTML(d) + shopDayHTML(d) + rainHTML(d))
       + '<p class="foot">Horários sugeridos, funcionamento de lugares e serviços do metrô podem mudar. Confirme nos sites oficiais antes de ir.</p>' + (editDay === d ? editDockHTML(d) : '');
     const box = $('.days'), act = $('.dchip.is-active');
     if (box && act) box.scrollLeft = Math.max(0, act.offsetLeft - box.clientWidth / 2 + act.clientWidth / 2);
@@ -3000,7 +3149,7 @@ Object.assign(PLACES, {
       + '<div class="depart-times"><div><b>' + dp.back + '</b><span>Voltar ao hotel</span></div><div><b>' + dp.leave + '</b><span>Sair para o ' + dp.ap.code + '</span></div><div><b>' + dp.flight + '</b><span>Voo</span></div></div>'
       + '<p class="muted">Conta: chegada ao aeroporto 3 h antes do voo e ' + esc(dp.ap.label) + ' de traslado a partir de Midtown.</p>'
       + '<div class="btn-row">' + ext(gcal('Sair para o aeroporto (' + dp.ap.code + ')', '2026-10-17', toMin(dp.leave), toMin(dp.leave) + 30, TRIP.hotelAddress, 'Voo às ' + dp.flight + '. Roteiro NYC 2026'), '📅 Lembrete na agenda', 'btn sm') + ext(uber(dp.ap.ll, dp.ap.name), '🚕 Uber até o ' + dp.ap.code, 'btn sm') + ext(LINKS.mtaAirports, 'Transporte público', 'btn sm') + '</div></section>'
-      + healthHTML()
+      + shopInfoHTML() + healthHTML()
       + (phase().k !== 'before' ? checklistHTML(true) : '') + '<section class="card"><h3 class="card-t">Seus dados</h3><p class="muted">Marcações, notas, horários e ingressos ficam salvos só neste aparelho. Cada pessoa da família marca no seu.</p><div class="btn-row"><button class="btn sm" data-act="reset">Limpar marcações de visita</button><button class="btn sm" data-act="reset-edits">Restaurar o roteiro original</button></div></section>'
       + '<p class="foot">Nova York, passo a passo: roteiro interativo com mapas, metrô e rotas entre cada destino.</p>';
   }
@@ -3275,6 +3424,14 @@ Object.assign(PLACES, {
   function dayCenter(d) {
     const pts = DAYS[d].stops.map((s) => P[s[0]]).filter((p) => p && p !== P.hotel);
     return [pts.reduce((a, p) => a + p.ll[0], 0) / pts.length, pts.reduce((a, p) => a + p.ll[1], 0) / pts.length];
+  }
+  function shopInfoHTML() {
+    const ids = (typeof SHOPS !== 'undefined' ? SHOPS : []).filter((k) => P[k]);
+    if (!ids.length) return '';
+    return '<section class="card" id="comprar"><h3 class="card-t">🛍️ Comprar</h3><p class="muted">Lojas da Target perto do roteiro: roupas, farmácia, lanches, lembranças e itens de viagem. Confira o horário de cada loja no site da Target.</p><div class="rows">' + ids.map((k) => {
+      const p = P[k], ds = DAYS.map((D, i) => ((D.shop || []).indexOf(k) >= 0 ? i + 1 : 0)).filter(Boolean);
+      return '<button class="row" data-act="place" data-id="' + esc(k) + '"><span class="row-i" aria-hidden="true">' + icon(k) + '</span><span class="row-main"><b>' + esc(p.n) + '</b><span class="muted">' + esc(p.ad + (ds.length ? ' · Dia ' + ds.join(', ') : '')) + '</span></span></button>';
+    }).join('') + '</div><div class="btn-row">' + ext('https://www.target.com/store-locator/find-stores', 'Todas as lojas da Target', 'btn sm') + '</div></section>';
   }
   function healthHTML() {
     const i = S.info || {};
